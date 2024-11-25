@@ -1,0 +1,112 @@
+body {
+  font-family: 'Averia Serif Libre';
+  background-color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 80vh;
+  background-image: url('../images/bg to.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  
+  .nav-button {
+    font-family: 'Averia Serif Libre';
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 0 15px;
+    border-radius: 20px;
+    background-color: #e72676;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    background-color: #ffffff;
+    color: #e72676;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+/* Description Box */
+.description-box {
+  margin: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.description-box h1 {
+  font-size: 3.5rem;
+  margin-top: 100px;
+  color: #000000;
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  margin-bottom: 0px;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.container {
+  background-color: #ffffff;
+  border: 1px solid #991010;
+  border-radius: 10px;
+  padding: 30px;
+  width: 1000px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 20px;
+}
+
+.container h2 {
+  margin-bottom: 15px;
+  color: #b40347;
+}
+
+.container p {
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container ul li {
+  margin: 5px 0;
+  color: #000000;
+}
+
+/* Style for <strong> elements */
+strong {
+  color: #e72676; /* Change this to your desired color */
+ 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}

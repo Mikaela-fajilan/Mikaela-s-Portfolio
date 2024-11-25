@@ -1,0 +1,133 @@
+body {
+    font-family: 'Averia Serif Libre';
+    background-color: #e0e0e0;
+    background-image: url('../images/bg\ to.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+  }
+  
+  .navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  
+  .nav-button {
+    font-family: 'Averia Serif Libre';
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 0 15px;
+    border-radius: 20px;
+    background-color: #e72676;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    background-color: #ffffff;
+    color: #e72676;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  
+  /* Main Content Layout */
+  .main-content {
+    display: flex;
+    margin-top: 50px; /* Adjust for fixed navbar */
+    width: 90%;
+    max-width: 2500px;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  /* Left Container Styling */
+  .left-container {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    min-width: 250px; /* Ensure a minimum size */
+    max-width: 300px; /* Limit width for better layout */
+    font-size: 1.3rem;
+  }
+  
+  .left-container .profile-pic {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  /* Right Container Styling */
+  .right-container {
+    flex: 2;
+    min-width: 700px; /* Ensure it remains visible on smaller screens */
+  }
+  
+  .description-box {
+    padding: 30px;
+    background-color: #ffffff5d;
+    border: 1px solid #dddddd70;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 2000px;
+  }
+  
+  .description-box h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .description-box ul {
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .description-box li {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  /* Styling for the 'strong' elements */
+  strong {
+    color: #e72676; /* Apply this color to all strong elements */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .main-content {
+      flex-direction: column; /* Stack containers vertically */
+      align-items: center;
+    }
+  
+    .left-container,
+    .right-container {
+      flex: unset; /* Reset flex for stacked layout */
+      max-width: 90%; /* Adjust width for smaller screens */
+    }
+  
+    .description-box {
+      padding: 20px;
+    }
+  }
+  
